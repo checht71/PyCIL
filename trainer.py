@@ -129,6 +129,7 @@ def _set_device(args):
             device = torch.device("cpu")
         else:
             device = torch.device("cuda:{}".format(device))
+            print("GPU initializing")
 
         gpus.append(device)
         
