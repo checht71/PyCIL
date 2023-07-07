@@ -1,0 +1,79 @@
+{
+    "os": "Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.12",
+    "heartbeatAt": "2023-07-05T22:52:58.430078",
+    "startedAt": "2023-07-05T22:52:57.644069",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config=./exps/icarl.json"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/gditzler/PyCIL",
+        "commit": "af03abfc459c6a28b4420c26d39d4b4329fafdf0"
+    },
+    "email": null,
+    "root": "/home/christian/PyCIL",
+    "host": "christian-ThinkPad-X1-Carbon-Gen-9",
+    "username": "christian",
+    "executable": "/home/christian/anaconda3/envs/PyCIL/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2719.294,
+        "min": 400.0,
+        "max": 4700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2800.0,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2800.0,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2800.0,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2800.0,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2800.0,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2800.0,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1126.875,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 2800.0,
+            "min": 400.0,
+            "max": 4700.0
+        }
+    ],
+    "disk": {
+        "total": 166.19533920288086,
+        "used": 136.9850959777832
+    },
+    "memory": {
+        "total": 15.341873168945312
+    }
+}

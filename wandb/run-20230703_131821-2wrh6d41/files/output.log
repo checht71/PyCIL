@@ -1,0 +1,37 @@
+2023-07-03 13:18:23,954 [trainer.py] => config: ./exps/icarl.json
+2023-07-03 13:18:23,954 [trainer.py] => prefix: reproduce
+2023-07-03 13:18:23,954 [trainer.py] => dataset: cifar100
+2023-07-03 13:18:23,954 [trainer.py] => memory_size: 2000
+2023-07-03 13:18:23,954 [trainer.py] => memory_per_class: 20
+2023-07-03 13:18:23,954 [trainer.py] => fixed_memory: False
+2023-07-03 13:18:23,954 [trainer.py] => shuffle: True
+2023-07-03 13:18:23,954 [trainer.py] => init_cls: 10
+2023-07-03 13:18:23,954 [trainer.py] => increment: 10
+2023-07-03 13:18:23,954 [trainer.py] => model_name: icarl
+2023-07-03 13:18:23,954 [trainer.py] => convnet_type: resnet32
+2023-07-03 13:18:23,954 [trainer.py] => device: [device(type='cuda', index=0)]
+2023-07-03 13:18:23,954 [trainer.py] => seed: 1993
+2023-07-03 13:18:23,954 [trainer.py] => wb-project: REU-Summer2023
+Files already downloaded and verified
+Files already downloaded and verified
+Traceback (most recent call last):
+  File "_mt19937.pyx", line 178, in numpy.random._mt19937.MT19937._legacy_seeding
+TypeError: 'str' object cannot be interpreted as an integer
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "main.py", line 31, in <module>
+    main()
+  File "main.py", line 12, in main
+    train(args)
+  File "/home/christian/PyCIL/trainer.py", line 18, in train
+    _train(args)
+  File "/home/christian/PyCIL/trainer.py", line 72, in _train
+    args["increment"],
+  File "/home/christian/PyCIL/utils/data_manager.py", line 12, in __init__
+    self._setup_data(dataset_name, shuffle, seed)
+  File "/home/christian/PyCIL/utils/data_manager.py", line 154, in _setup_data
+    np.random.seed(seed)
+  File "mtrand.pyx", line 246, in numpy.random.mtrand.RandomState.seed
+  File "_mt19937.pyx", line 166, in numpy.random._mt19937.MT19937._legacy_seeding
+  File "_mt19937.pyx", line 186, in numpy.random._mt19937.MT19937._legacy_seeding
+TypeError: Cannot cast scalar from dtype('<U4') to dtype('int64') according to the rule 'safe'

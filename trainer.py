@@ -28,7 +28,7 @@ def _train(args):
         name=''.join([
             args["dataset"], "_",
             args["model_name"], "_seed_",
-            args["seed"]
+            str(args["seed"])
         ]), 
         config={
             "model_name": args["model_name"],
@@ -125,8 +125,8 @@ def _set_device(args):
     gpus = []
 
     for device in device_type:
-        if device == -1:
-            device = torch.device("mps")
+        if device == "cpu":
+            device = torch.device("cpu")
         else:
             device = torch.device("cuda:{}".format(device))
 

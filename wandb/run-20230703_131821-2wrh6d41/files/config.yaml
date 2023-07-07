@@ -1,0 +1,44 @@
+wandb_version: 1
+
+model_name:
+  desc: null
+  value: icarl
+conv_type:
+  desc: null
+  value: resnet32
+dataset:
+  desc: null
+  value: cifar100
+prefix:
+  desc: null
+  value: reproduce
+_wandb:
+  desc: null
+  value:
+    python_version: 3.7.12
+    cli_version: 0.15.4
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1688404701.606197
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.7.12
+      5: 0.15.4
+      8:
+      - 5
